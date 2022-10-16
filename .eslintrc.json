@@ -1,0 +1,26 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": ["react-app", "react-app/jest"],
+  "rules": {
+    "no-trailing-spaces": "warn",
+    "no-multiple-empty-lines": "error",
+    "arrow-spacing": "error",
+    "comma-dangle": "off",
+    "no-constant-condition": "warn",
+    "react/jsx-max-props-per-line": [1, { "maximum": 1, "when": "multiline" }],
+    "react/react-in-jsx-scope": "off",
+    "react/prop-types": "off",
+    "react-hooks/exhaustive-deps": "warn",
+    "import/no-default-export": "off",
+    "spaced-comment": [
+      "error",
+      "always",
+      {
+        "markers": ["/"]
+      }
+    ]
+  }
+}

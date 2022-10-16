@@ -1,0 +1,21 @@
+{
+  "plugins": ["stylelint-prettier"],
+  "extends": ["stylelint-config-standard-scss", "stylelint-config-prettier"],
+  "rules": {
+    "selector-class-pattern": null,
+    "length-zero-no-unit": null,
+    "font-family-no-missing-generic-family-keyword": null,
+    "font-family-name-quotes": null,
+    "no-descending-specificity": null,
+    "selector-pseudo-element-colon-notation": null,
+    "scss/at-import-partial-extension": null,
+    "color-hex-length": null,
+    "scss/at-mixin-argumentless-call-parentheses": null,
+    "property-no-vendor-prefix": null,
+    "selector-pseudo-class-no-unknown": null,
+    "color-function-notation": "legacy",
+    "alpha-value-notation": "number",
+    "selector-no-vendor-prefix": null,
+    "value-no-vendor-prefix": null
+  }
+}
