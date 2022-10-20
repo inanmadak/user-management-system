@@ -12,7 +12,7 @@ const defaultTableState: TableState<any> = {
   selectedItemId: undefined,
 };
 
-export const useTable = <T>(initialState?: TableState<T>): { state: TableState<T> } & TableActions<T> => {
+export const useTable = <T>(initialState?: Partial<TableState<T>>): { state: TableState<T> } & TableActions<T> => {
   const [state, dispatch] = useReducer(tableReducer, { ...defaultTableState, ...initialState });
 
   const setItems = useCallback((items: T[]) => dispatch({ type: TableActionType.SetItems, data: items }), []);

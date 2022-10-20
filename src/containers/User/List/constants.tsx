@@ -1,29 +1,9 @@
 import { GridColDef } from '@mui/x-data-grid';
 
+import { DateCell } from 'components/Table';
 import { UserInfo } from 'common/interface';
 
-export const MOCK_USERS: UserInfo[] = [
-  {
-    id: '1',
-    name: 'John Carmack',
-    birthdate: new Date(2000, 2, 5),
-    group: 'Lions',
-  },
-  {
-    id: '2',
-    name: 'John Snow',
-    birthdate: new Date(1987, 2, 1),
-    group: 'Lions',
-  },
-  {
-    id: '3',
-    name: 'Jasmin Green',
-    birthdate: new Date(2092, 2, 9),
-    group: 'Tigers',
-  },
-];
-
-export const USER_TABLE_COLS: GridColDef[] = [
+export const USER_TABLE_COLS: GridColDef<UserInfo>[] = [
   {
     field: 'id',
     headerName: 'ID',
@@ -41,6 +21,7 @@ export const USER_TABLE_COLS: GridColDef[] = [
     headerName: 'Birthdate',
     flex: 1,
     width: 150,
+    renderCell: ({ value }) => <DateCell date={value} />,
   },
   {
     field: 'group',
