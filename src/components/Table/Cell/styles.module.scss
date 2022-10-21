@@ -3,3 +3,18 @@
   text-overflow: ellipsis;
   max-width: 100%;
 }
+
+.actionsWrapper {
+  display: flex;
+  gap: 0.25rem;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .actionsWrapper {
+    transform: scale(0.8);
+  }
+}

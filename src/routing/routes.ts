@@ -1,3 +1,4 @@
+import { UserForm } from 'containers/User/Form';
 import { UserList } from 'containers/User/List';
 import { PATHS } from './paths';
 
@@ -10,11 +11,11 @@ export const ROUTES = [
   {
     path: PATHS.ADD_USER,
     exact: true,
-    component: UserList,
+    component: UserForm,
   },
   {
     path: PATHS.EDIT_USER,
     exact: true,
-    component: UserList,
+    component: UserForm,
   },
 ];

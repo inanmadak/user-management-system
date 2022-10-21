@@ -7,5 +7,11 @@ export interface UserInfo {
   id: string;
   name: string;
   birthdate: Date;
-  group: string;
+  group: GroupInfo;
+}
+
+export interface GroupInfo {
+  id: string;
+  name: string;
+  createdAt: Date;
 }
