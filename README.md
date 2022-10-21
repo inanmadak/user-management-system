@@ -1,4 +1,12 @@
-# Free Now & Share Now Vehicles
+# User Management System
+
+There are a lot of things can be done to enhance this user management system however, as it is stated, it would take a lot more hours.
+I did shortcuts / simplified ways of doing things in some places. App randomly generates some users when it loads, and expose them
+through a global context. You can add, edit and delete users. Groups are generated automatically, I could add forms and table to add and list groups,
+but again, it would take more time. You can see how the User forms are implemented and understand that it is going to be similar for groups.
+Other than this, there is a basic level of routing, couple of tests, pre-commit hook and Prettier / ESLint config.
+
+You can use below scripts to install dependecies and run the project.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
