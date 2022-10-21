@@ -29,6 +29,7 @@ export const USER_TABLE_COLS: GridColDef<UserInfo>[] = [
     flex: 1,
     disableColumnMenu: true,
     minWidth: 120,
+    sortable: false,
     renderCell: ({ value }) => <LongTextCell title={value}>{value}</LongTextCell>,
   },
   {
