@@ -6,6 +6,7 @@ import { BareUserForm } from '../BareUserForm';
 it('renders the form', () => {
   render(<BareUserForm initialValues={userFormInitialValues} onCancel={jest.fn()} onSubmit={jest.fn()} />);
 
+  expect(screen.getByText('Add new user')).toBeInTheDocument();
   expect(screen.getByPlaceholderText('Name')).toBeInTheDocument();
   expect(screen.getByPlaceholderText('Birthdate')).toBeInTheDocument();
   expect(screen.getByText('Select an option')).toBeInTheDocument();

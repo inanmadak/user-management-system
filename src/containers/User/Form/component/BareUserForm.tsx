@@ -9,6 +9,7 @@ import { BareUserFormProps } from '../interface';
 import { BARE_USER_FORM_BOX_SX } from '../constants';
 import { useAppFactory } from 'context/AppFactoryContext';
 import { makeSelectOptions } from 'utils/misc';
+import { PageTitle } from 'components/PageTitle/Component';
 import styles from './styles.module.scss';
 
 const UserFormSchema = Yup.object().shape({
@@ -22,6 +23,9 @@ export const BareUserForm: FC<BareUserFormProps> = ({ onCancel, onSubmit, ...pro
 
   return (
     <Box sx={BARE_USER_FORM_BOX_SX}>
+      <div className={styles.formTitle}>
+        <PageTitle title={props?.initialValues?.id ? 'Edit user' : 'Add new user'} />
+      </div>
       <Formik validationSchema={UserFormSchema} onSubmit={onSubmit} validateOnMount {...props}>
         {({ isValid, values, isSubmitting }) => (
           <Form className={styles.bareUserForm}>
